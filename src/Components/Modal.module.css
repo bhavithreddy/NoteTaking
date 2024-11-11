@@ -1,0 +1,116 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.closeButton {
+  float: right;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.modalHeading {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.modalLabel {
+  margin: 10px 0 5px;
+}
+
+.modalInput {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.colorOptions {
+  display: flex;
+  gap: 10px;
+}
+
+.colorButton {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.selected {
+  border: 2px solid black;
+}
+
+.createButton {
+  background-color: #0047ff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 50%;
+
+  margin-left: 150px;
+}
+.groupcreate {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.group111 {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .modalContent {
+    width: 80%;
+  }
+
+  .modalInput {
+    width: 100%;
+  }
+
+  .colorOptions {
+    flex-wrap: wrap;
+  }
+
+  .createButton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .modalContent {
+    width: 90%;
+  }
+
+  .modalHeading {
+    font-size: 18px;
+  }
+
+  .createButton {
+    font-size: 14px;
+  }
+}

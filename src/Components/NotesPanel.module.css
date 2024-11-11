@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.notesPanel {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.notesList {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  overflow-y: auto;
+  max-height: calc(100vh - 150px);
+  padding-top: 0;
+  box-sizing: border-box;
+}
+
+.noteCard {
+  position: relative;
+  display: flex;
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+
+  width: 97%;
+}
+
+.noteDate {
+  position: absolute;
+  display: block;
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 5px;
+  margin-right: 20px;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  font-weight: bold;
+  color: black;
+}
+
+.noteInputContainer {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  background: #001f8b;
+  height: 90px;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.noteInput {
+  flex-grow: 1;
+  height: 80px;
+  /* padding: 10px; */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: none;
+}
+
+.addNoteButton {
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.groupHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background: #001f8b;
+}
+.gname {
+  color: white;
+  margin-left: 20px;
+}
+
+.groupCircle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+mainCo.css .MainContent {
+  background: #dae5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.imageStyle {
+  margin: 0 auto;
+  /* z-index: -1; */
+}
+.title {
+  font-size: 40px;
+}
+.data {
+  width: 460px;
+  height: 60px;
+
+  /* margin: auto; */
+}
+.data p {
+  max-width: 100%;
+}
+.FooterMssg {
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  right: 32%;
+}
+.bottomimg {
+  position: relative;
+  right: 30px;
+}
+
+Home.css .mainhome {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+Sidebar.css .sidebar {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+.sidebartitle {
+  font-size: 30px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.button {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.groupsContainer {
+  flex-grow: 1;
+  margin-top: 20px;
+  margin-left: 40px;
+  overflow-y: auto;
+  padding-right: 10px;
+  max-height: calc(100vh - 130px);
+}
+
+.groupItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.groupItem {
+  position: relative;
+}
+
+.groupCircle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.groupCircle {
+  transition: opacity 0.3s;
+}
+
+.groupName {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.deleteButton {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 0 8px;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s; /* Smooth transition */
+}
+
+.groupItem:hover .deleteButton {
+  opacity: 1; /* Show delete button on hover */
+}
+
+.notesPanelContainer {
+  padding: 16px;
+}
+
+.placeholderText {
+  font-size: 16px;
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}
+modal.css .modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.closeButton {
+  float: right;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.modalHeading {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.modalLabel {
+  margin: 10px 0 5px;
+}
+
+.modalInput {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.colorOptions {
+  display: flex;
+  gap: 10px;
+  /* margin-bottom: 15px; */
+}
+
+.colorButton {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.selected {
+  border: 2px solid black;
+}
+
+.createButton {
+  background-color: #0047ff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 50%;
+
+  margin-left: 150px;
+}
+.groupcreate {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.group111 {
+  width: 100%;
+}
